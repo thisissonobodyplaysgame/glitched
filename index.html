@@ -79,6 +79,29 @@ body {
     text-align: right;
     z-index: 10;
 }
+/* Summer Countdown */
+.summer-counter{
+    position:absolute;
+    left:40px;
+    bottom:40px;
+    background:rgba(20,20,20,0.6);
+    backdrop-filter:blur(10px);
+    padding:15px 25px;
+    border-radius:20px;
+    z-index:10;
+}
+
+.summer-label{
+    font-size:12px;
+    letter-spacing:3px;
+    opacity:0.7;
+}
+
+.summer-days{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:3px;
+}
 
 /* Fullscreen Library */
 .library-overlay {
@@ -333,7 +356,7 @@ body {
         </div>
 
         <div class="library-item" data-name="Blooket" onclick="openApp('https://learningaboutbeg.b-cdn.net/search?query=aHR0cHM6Ly9ibG9va2V0Ym90LnNjaG9vbGNoZWF0cy5uZXQv')">
-            <div class="library-icon" style="background-image:url('https://theoretical-amber-feokxpxuh3.edgeone.app/ChatGPT%20Image%20Apr%2020,%202026,%2009_50_57%20PM.png')"></div>
+            <div class="library-icon" style="background-image:url('https://www.image2url.com/r2/default/images/1779323396453-2d175532-0124-4e6c-81d5-8de0a0e7bdb8.png')"></div>
             <div class="library-name">Blooket Hacks</div>
         </div>
 
@@ -403,6 +426,10 @@ style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thum
 </div>
 
 <div class="clock" id="clock"></div>
+<div class="summer-counter" id="summerCounter">
+    <div class="summer-label">SUMMER</div>
+    <div class="summer-days" id="summerDays">0 DAYS</div>
+</div>
 
 <script>
 /* =========================
@@ -427,9 +454,17 @@ function updateClock() {
 
     const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
     document.getElementById("dayText").textContent = days[now.getDay()];
+const summerDate = new Date("June 9, 2026 00:00:00");
+const diff = summerDate - now;
+
+const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+document.getElementById("summerDays").innerHTML =
+    daysLeft <= 0 ? "OUT NOW" : daysLeft + " DAYS";
 }
 setInterval(updateClock, 1000);
 updateClock();
+	
 
 /* =========================
    BACKGROUND SWITCH
