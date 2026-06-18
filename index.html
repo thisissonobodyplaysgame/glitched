@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Glitched OS</title>
+<title>Sunset OS</title>
 
 <style>
 body {
     margin: 0;
     height: 100vh;
-    background: url('https://wallpapercave.com/wp/wp12547070.png') no-repeat center center/cover;
+    background: url('https://wallpapercave.com/uwp/uwp4960818.jpeg') no-repeat center center/cover;
     font-family: Arial, sans-serif;
     color: white;
     overflow: hidden;
@@ -78,29 +78,6 @@ body {
     border-radius: 20px;
     text-align: right;
     z-index: 10;
-}
-/* Summer Countdown */
-.summer-counter{
-    position:absolute;
-    left:40px;
-    bottom:40px;
-    background:rgba(20,20,20,0.6);
-    backdrop-filter:blur(10px);
-    padding:15px 25px;
-    border-radius:20px;
-    z-index:10;
-}
-
-.summer-label{
-    font-size:12px;
-    letter-spacing:3px;
-    opacity:0.7;
-}
-
-.summer-days{
-    font-size:28px;
-    font-weight:bold;
-    margin-top:3px;
 }
 
 /* Fullscreen Library */
@@ -221,167 +198,6 @@ body {
     background-position: center;
     margin: auto;
 }
-/* =========================
-   LOADING SCREEN
-========================= */
-
-#loadingScreen{
-    position:fixed;
-    inset:0;
-    background:
-        radial-gradient(circle at top,
-        rgba(130,80,255,0.25),
-        transparent 40%),
-        linear-gradient(135deg,#050510,#090018,#120024);
-    z-index:999999;
-    overflow:hidden;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    animation: fadeOutScreen 1.8s ease forwards;
-    animation-delay:4.2s;
-}
-
-/* background noise */
-.glitch-bg{
-    position:absolute;
-    inset:-50%;
-    background:
-    repeating-linear-gradient(
-        0deg,
-        rgba(255,255,255,0.02) 0px,
-        rgba(255,255,255,0.02) 2px,
-        transparent 2px,
-        transparent 4px
-    );
-
-    animation: moveBg 8s linear infinite, flicker 0.2s infinite;
-}
-
-/* center */
-.loading-content{
-    position:relative;
-    z-index:2;
-    text-align:center;
-    animation: contentFade 4s ease forwards;
-}
-
-/* title */
-.glitch{
-    position:relative;
-    font-size:95px;
-    font-weight:900;
-    letter-spacing:10px;
-    color:white;
-    text-transform:uppercase;
-
-    text-shadow:
-        0 0 10px #7b2fff,
-        0 0 25px #4d9fff,
-        0 0 45px #7b2fff;
-
-    animation: glitchSkew 1s infinite alternate, pulseGlow 2s infinite;
-}
-
-/* glitch layers */
-.glitch::before,
-.glitch::after{
-    content:attr(data-text);
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    overflow:hidden;
-}
-
-.glitch::before{
-    color:#4da6ff;
-    transform:translate(-3px,0);
-    animation: glitch1 0.25s infinite;
-}
-
-.glitch::after{
-    color:#b84dff;
-    transform:translate(3px,0);
-    animation: glitch2 0.25s infinite;
-}
-
-/* loading bar */
-.loading-bar{
-    width:340px;
-    height:12px;
-    margin:35px auto 20px;
-    border-radius:20px;
-    overflow:hidden;
-    background:rgba(255,255,255,0.08);
-    box-shadow:0 0 20px rgba(111,0,255,0.4);
-}
-
-.loading-fill{
-    width:0%;
-    height:100%;
-    background:linear-gradient(90deg,#5f6fff,#8d3dff,#5fd4ff);
-    box-shadow:0 0 20px #8d3dff;
-    animation: loadBar 4s ease forwards;
-}
-
-/* text */
-.loading-text{
-    font-size:15px;
-    letter-spacing:5px;
-    opacity:0.8;
-    color:#d9d9ff;
-    animation:flickerText 1s infinite;
-}
-
-/* =========================
-   ANIMATIONS
-========================= */
-
-@keyframes loadBar{from{width:0;}to{width:100%;}}
-
-@keyframes fadeOutScreen{
-    0%{opacity:1;}
-    100%{opacity:0;visibility:hidden;}
-}
-
-@keyframes glitch1{
-    0%{clip-path:inset(0 0 85% 0);}
-    100%{clip-path:inset(80% 0 5% 0);}
-}
-
-@keyframes glitch2{
-    0%{clip-path:inset(80% 0 5% 0);}
-    100%{clip-path:inset(0 0 85% 0);}
-}
-
-@keyframes glitchSkew{
-    0%{transform:skew(0);}
-    100%{transform:skew(2deg);}
-}
-
-@keyframes pulseGlow{
-    50%{filter:brightness(1.3);}
-}
-
-@keyframes moveBg{
-    to{transform:translateY(40px);}
-}
-
-@keyframes flicker{
-    50%{opacity:0.7;}
-}
-
-@keyframes flickerText{
-    50%{opacity:1;}
-}
-
-@keyframes contentFade{
-    0%{opacity:0;transform:scale(0.9);}
-    100%{opacity:1;transform:scale(1);}
-}
 </style>
 </head>
 <div class="settings-overlay" id="settingsOverlay"
@@ -445,7 +261,7 @@ body {
                  style="width:100%;height:100px;background:url('https://wallpapercave.com/uwp/uwp4960449.jpeg');background-size:cover;background-position:center;border-radius:10px;cursor:pointer;"></div>
 
             <div onclick="setBG(this)"
-                 style="width:100%;height:100px;background:url('https://windows10spotlight.com/wp-content/uploads/2016/11/a27bdbb39023de2c3f6ae64add8c8d8d.jpg');background-size:cover;background-position:center;border-radius:10px;cursor:pointer;"></div>
+                 style="width:100%;height:100px;background:url('https://4kwallpapers.com/images/walls/thumbs_3t/25229.jpg');background-size:cover;background-position:center;border-radius:10px;cursor:pointer;"></div>
 
             <div onclick="setBG(this)"
                  style="width:100%;height:100px;background:url('https://4kwallpapers.com/images/walls/thumbs_3t/26035.jpg');background-size:cover;background-position:center;border-radius:10px;cursor:pointer;"></div>
@@ -461,20 +277,6 @@ body {
     </div>
 </div>
 <body>
-<!-- GLITCHED OS LOADING SCREEN -->
-<div id="loadingScreen">
-    <div class="glitch-bg"></div>
-
-    <div class="loading-content">
-        <h1 class="glitch" data-text="GLITCHED OS">GLITCHED OS</h1>
-
-        <div class="loading-bar">
-            <div class="loading-fill"></div>
-        </div>
-
-        <div class="loading-text">BOOTING SYSTEM...</div>
-    </div>
-</div>
 
 <div class="day" id="dayText">MONDAY</div>
 
@@ -531,7 +333,7 @@ body {
         </div>
 
         <div class="library-item" data-name="Blooket" onclick="openApp('https://learningaboutbeg.b-cdn.net/search?query=aHR0cHM6Ly9ibG9va2V0Ym90LnNjaG9vbGNoZWF0cy5uZXQv')">
-            <div class="library-icon" style="background-image:url('https://www.image2url.com/r2/default/images/1779323396453-2d175532-0124-4e6c-81d5-8de0a0e7bdb8.png')"></div>
+            <div class="library-icon" style="background-image:url('https://theoretical-amber-feokxpxuh3.edgeone.app/ChatGPT%20Image%20Apr%2020,%202026,%2009_50_57%20PM.png')"></div>
             <div class="library-name">Blooket Hacks</div>
         </div>
 
@@ -601,10 +403,6 @@ style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thum
 </div>
 
 <div class="clock" id="clock"></div>
-<div class="summer-counter" id="summerCounter">
-    <div class="summer-label">SUMMER</div>
-    <div class="summer-days" id="summerDays">0 DAYS</div>
-</div>
 
 <script>
 /* =========================
@@ -629,17 +427,9 @@ function updateClock() {
 
     const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
     document.getElementById("dayText").textContent = days[now.getDay()];
-const summerDate = new Date("June 9, 2026 00:00:00");
-const diff = summerDate - now;
-
-const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
-
-document.getElementById("summerDays").innerHTML =
-    daysLeft <= 0 ? "OUT NOW" : daysLeft + " DAYS";
 }
 setInterval(updateClock, 1000);
 updateClock();
-	
 
 /* =========================
    BACKGROUND SWITCH
@@ -896,11 +686,6 @@ function searchApps() {
         }
     });
 }
-// auto remove loading screen after animation
-setTimeout(() => {
-    const screen = document.getElementById("loadingScreen");
-    if (screen) screen.remove();
-}, 6000);
 </script>
 
 </body>
